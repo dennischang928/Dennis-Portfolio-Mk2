@@ -11,8 +11,11 @@ const imgStyle = {
     boxShadow: "0 15px 30px rgba(0, 0, 0, 0.4), 0 5px 15px rgba(0, 0, 0, 0.2)",
 };
 
-// Image imports
-const images = Array.from({ length: 31 }, (_, i) => require(`../Images/AboutMe/${i + 1}.jpeg`));
+// Preload images
+const images = [];
+for (let i = 1; i <= 31; i++) {
+    images[i - 1] = require(`../Images/AboutMe/${i}.jpeg`);
+}
 
 const LoopedThroughImages = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
