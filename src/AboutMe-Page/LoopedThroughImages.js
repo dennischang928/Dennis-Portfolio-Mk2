@@ -66,7 +66,7 @@ const LoopedThroughImages = () => {
         }, isHovered ? 5000 : 2000);
 
         return () => clearInterval(timer);
-    }, [isInView, imagesLoaded, isHovered]);
+    });
 
     // Start transition on image index change
     useEffect(() => {
