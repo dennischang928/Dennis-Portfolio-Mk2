@@ -1,0 +1,49 @@
+.Hamburger_List {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 0vh;
+    background-color: var(--Orange-color);
+    opacity: 90%;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    transition: height 0.5s;
+    overflow: hidden;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 6.5vh;
+    bottom: 0;
+
+
+}
+
+.Hamburger_List ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+
+    -webkit-transition: font-size 0.2s;
+    -moz-transition: font-size 0.2s;
+    -ms-transition: font-size 0.2s;
+    -o-transition: font-size 0.2s;
+    transition: font-size 0.2s;
+
+    height: 100%;
+    margin-bottom: 6.5vh;
+
+    font-size: calc(100% + 0.4vmin);
+    list-style-type: none;
+
+}
+
+.Hamburger_List ul a:active {
+    cursor: pointer;
+    font-size: calc(100% + 0.7vmin);
+}

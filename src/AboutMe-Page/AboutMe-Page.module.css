@@ -1,0 +1,54 @@
+.AboutMePage {
+    height: fit-content;
+    padding: 8vh 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+    background-color: var(--PaperGrey-color);
+}
+
+.AboutMePage h1 {
+    text-align: center;
+    font-size: calc(100% + 3vmin);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.AboutMePage .Content_Part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: max(1vw, 50px);
+    text-align: center;
+}
+
+.AboutMePage .Content_Part .paragraph {
+    font-size: 1.1rem; /* Increased font size for desktop */
+    display: flex; /* Flex display for desktop layout */
+    align-items: center; /* Align items for desktop */
+    text-align: left;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #333;
+    padding: 0; /* No padding for desktop */
+}
+
+@media screen and (max-width: 600px) {
+    .AboutMePage .Content_Part .paragraph {
+        font-size: 1rem; /* Base font size for mobile */
+        max-width: 90%; /* Increased for flexibility on smaller screens */
+        display: block; /* Changed to block for better stacking on mobile */
+        margin: 0 auto; /* Centering the paragraph on mobile */
+        padding: 0 0.5rem; /* Added padding for better spacing on mobile */
+        text-align: left; /* Ensure text is left-aligned on mobile */
+        line-height: 1.6; /* Maintain line height on mobile */
+        letter-spacing: 0.01em; /* Maintain letter spacing on mobile */
+        color: #333; /* Maintain text color on mobile */
+    }
+    
+    .AboutMePage .Content_Part {
+        flex-direction: column; /* Default to row for desktop */
+    }
+}
+
