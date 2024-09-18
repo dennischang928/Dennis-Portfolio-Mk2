@@ -21,8 +21,32 @@ const LoopedThroughImages = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
     const [isInView, setIsInView] = useState(false);
+    const [imagesLoaded, setImagesLoaded] = useState(false);
     const transRef = useSpringRef();
     const containerRef = useRef(null);
+
+    // Preload images
+    useEffect(() => {
+        let loadedCount = 0;
+        const imagePromises = images.map((src) => {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.src = src;
+                img.onload = () => {
+                    loadedCount++;
+                    if (loadedCount === images.length) {
+                        setImagesLoaded(true);
+                    }
+                    resolve();
+                };
+                img.onerror = reject;
+            });
+        });
+
+        Promise.all(imagePromises).then(() => {
+            setImagesLoaded(true);
+        });
+    }, []);
 
     // Transition configuration
     const transitions = useTransition(currentImageIndex, {
@@ -36,13 +60,13 @@ const LoopedThroughImages = () => {
 
     // Image change interval
     useEffect(() => {
-        if (!isInView) return;
+        if (!isInView || !imagesLoaded) return;
         const timer = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         }, isHovered ? 5000 : 2000);
 
         return () => clearInterval(timer);
-    });
+    }, [isInView, imagesLoaded, isHovered]);
 
     // Start transition on image index change
     useEffect(() => {
@@ -76,7 +100,7 @@ const LoopedThroughImages = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            {transitions((style, i) => (
+            {imagesLoaded && transitions((style, i) => (
                 <animated.img
                     key={currentImageIndex}
                     style={{ ...imgStyle, ...style }}

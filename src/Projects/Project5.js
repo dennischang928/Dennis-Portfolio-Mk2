@@ -35,7 +35,7 @@ export const Project5 = {
     id: "Line_Following_Robot",
     title: "Line Following Robot",
     content: (
-        <p style={{ color: "black" }}>
+        <p>
             This is a group project for my DAT (<a href="https://sites.google.com/ism.edu.mo/dat/%E5%B8%AB%E7%94%9F%E5%84%AA%E7%A7%80%E4%BD%9C%E5%93%81%E8%88%87%E5%88%86%E4%BA%AB/2324-linefollower" target="_blank">Design and Application of Technology</a>) class.
             <br />
             <br />
