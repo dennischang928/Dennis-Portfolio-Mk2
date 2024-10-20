@@ -4,10 +4,10 @@ import styles from "./AboutMe-Page.module.css";
 
 const AboutMeText = ({ styles }) => {
     const paragraphs = [
-        "Hey! 👋 I’m Dennis Chang Seng Chon, a high school student from Macau 🇲🇴.",
-        "My interest in engineering began in the sixth grade, when I realized it was the perfect blend of everything I love: designing and creating.",
+        "Hey! 👋 I’m Dennis, Chang Seng Chon, a high school student from Macau 🇲🇴.",
+        "My engineering journey started in the sixth grade, when I realized it was the perfect blend of everything I love: problem-solving and creating.",
         "Since then, I’ve worked on various projects, of which up to now I've completed 12 in the realms of mechanical engineering, electrical engineering, embedded systems, computer vision, deep learning, web development, and more.",
-        "Engineering attracts me in that it’s everywhere in our lives, from something as usual as a QR code to the landing system of the Curiosity Rover."
+        "Engineering attracts me because it's everywhere in our lives, from something as simple as a QR code to the landing system of the Curiosity Rover. It is where theories become reality, where the wisdom of humankind converges for one purpose: to improve people's lives."
     ];
 
     return (

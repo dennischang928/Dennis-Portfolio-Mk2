@@ -31,6 +31,9 @@ export const Project1 = {
     title: "Rubik’s Cube Solver",
     content: (
         <p style={{ color: "black" }}>
+            <h3>What is this?</h3>
+            <hr />
+            <br />
             This project is a Rubik's cube solving robot that I built from scratch when I was in the 8th grade.
             <br />
             <br />
