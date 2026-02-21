@@ -25,7 +25,7 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import { Fragment } from "react"
 
 export const Project3 = {
-    id: "Handy_Map",
+    id: "map",
     title: "Handy Map",
     content: (
         <p>

@@ -32,7 +32,7 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 
 export const Project5 = {
-    id: "Line_Following_Robot",
+    id: "lbot",
     title: "Line Following Robot",
     content: (
         <p>

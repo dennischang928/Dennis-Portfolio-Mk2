@@ -27,7 +27,7 @@ import Project1_Gallery_Image8 from "../Images/Project1/Gallery_Image8.png"
 
 
 export const Project1 = {
-    id: "Rubik's_Cube_Solver",
+    id: "solver",
     title: "Rubik’s Cube Solver",
     content: (
         <p style={{ color: "black" }}>

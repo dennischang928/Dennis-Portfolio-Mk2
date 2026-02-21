@@ -22,7 +22,7 @@ import Project2_Gallery_Image10 from "../Images/Project2/Gallery_Image10.png"
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 export const Project2 = {
-    id: "Biped_Servo_Robot",
+    id: "brobot",
     title: "Biped Servo Robot",
     content: (
         <p>

@@ -8,7 +8,7 @@ import Project6_Gallery_Image2 from "../Images/Project6/Gallery_Image2.jpeg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 export const Project6 = {
-  id: "Denniss_Portfolio_Website",
+  id: "portfolio",
   title: "Dennis's Portfolio Website",
   content: (
     <p>
