@@ -42,7 +42,10 @@ const IntroductionPage = () => {
                     <ul className={styles.facts}>
                         <li>Pursuing a Bachelor of Electrical Engineering in Pennsylvannia State University.</li>
                         <li>Creating is my passion.</li>
-                        <li>My favorite programming language is Python.</li>
+                        <li>I love Jogging, Photography, and Reading.</li>
+                        <li></li>
+
+
                         {/* <li></li> */}
                         {/* <li>Web Developer</li> */}
                         {/* <li>Hobby Jogger</li> */}
