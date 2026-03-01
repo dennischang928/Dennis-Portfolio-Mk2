@@ -1,5 +1,6 @@
 import React from "react";
 import { TypeAnimation } from 'react-type-animation';
+import Button from '@mui/material/Button';
 import styles from './Introduction-Page.module.css';
 
 // Introduction text sequences
@@ -20,7 +21,7 @@ const IntroductionPage = () => {
         <div className={styles.container}>
             {/* Non-mobile introduction section */}
             <div className={styles.NIntro_section} id="Intro-section">
-                <div className={styles.Primary_Background}></div>
+                {/* <div className={styles.Primary_Background}></div> */}
                 <div className={styles.left}>
                     <img loading="lazy" src={require("../Images/Intro.jpg")} alt="Introduction" />
                 </div>
@@ -38,9 +39,21 @@ const IntroductionPage = () => {
                         speed={50}
                         deletionSpeed={70}
                     />
+                    <ul className={styles.facts}>
+                        <li>Pursuing a Bachelor of Electrical Engineering in Pennsylvannia State University.</li>
+                        <li>Creating is my passion.</li>
+                        <li>My favorite programming language is Python.</li>
+                        {/* <li></li> */}
+                        {/* <li>Web Developer</li> */}
+                        {/* <li>Hobby Jogger</li> */}
+                    </ul>
+                    <a href="/Resume-SengChonChang.pdf" download style={{ textDecoration: "none" }}>
+                        <Button variant="contained" size="medium" className={styles.downloadresume}>
+                            Download Resume
+                        </Button>
+                    </a>
                 </div>
             </div>
-
             {/* Mobile introduction section */}
             <div className={styles.MIntro_section} id="Intro-section">
                 <div className={styles.Primary_Background}></div>
