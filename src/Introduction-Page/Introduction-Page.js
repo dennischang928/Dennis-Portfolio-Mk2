@@ -50,7 +50,7 @@ const IntroductionPage = () => {
                         {/* <li>Web Developer</li> */}
                         {/* <li>Hobby Jogger</li> */}
                     </ul>
-                    <a href="/Resume-SengChonChang.pdf" download style={{ textDecoration: "none" }}>
+                    <a href="/Resume-SengChonChang.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                         <Button variant="contained" size="medium" className={styles.downloadresume}>
                             Download Resume
                         </Button>
