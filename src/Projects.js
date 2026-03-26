@@ -4,7 +4,9 @@ import { Project3 } from "./Projects/Project3";
 import { Project4 } from "./Projects/Project4";
 import { Project5 } from "./Projects/Project5";
 import { Project6 } from "./Projects/Project6";
+import { Project7 } from "./Projects/Project7";
 export const Project_Page_Items = [
+  Project7,
   Project5,
   Project1,
   Project6,
