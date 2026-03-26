@@ -22,7 +22,7 @@ import Project7_Gallery_Image16 from "../Images/Project7/Gallery_Image16.png";
 import Project7_Gallery_Image17 from "../Images/Project7/Gallery_Image17.png";
 
 export const Project7 = {
-  id: "robotic-tail-exoskeleton",
+  id: "tail",
   title: "Robotic Tail Exoskeleton",
   content: (
     <p>
