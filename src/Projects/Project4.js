@@ -29,7 +29,7 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import { Fragment } from "react"
 
 export const Project4 = {
-    id: "3D_printer",
+    id: "printer",
     title: "3D printer",
     content: (
         <p>
