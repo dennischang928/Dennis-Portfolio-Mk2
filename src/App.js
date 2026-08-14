@@ -12,6 +12,7 @@ import Contact from "./Contact/Contact"
 
 import Detailed_Project_Page from "./Detailed-Project-Page/Detailed_Project_Page"
 import { Project_Page_Items } from "./Projects.js"
+import ProjectBubbleMap from "./Project-Page/ProjectBubbleMap"
 
 const App = () => {
     const Introduction_PageRef = useRef(null);
@@ -106,6 +107,7 @@ const App = () => {
                             }}
                         />
 
+                        <ProjectBubbleMap projects={Project_Page_Items} />
                         {Display_Project_Pages}
                     </div>
                     <div ref={ContactRef}>

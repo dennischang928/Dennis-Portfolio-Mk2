@@ -50,6 +50,17 @@ export const Project7 = {
   ),
   thumbnail: Project7_Thumbnail,
   backgroundImage: Project7_Background,
+  projectCategories: [
+    "biomedical robotics",
+    "wearable robotics",
+    "assistive technology",
+    "human balance assistance",
+    "bio-inspired design",
+    "exoskeleton systems",
+    "mechanical engineering",
+    "embedded robotics",
+    "research prototype",
+  ],
   tags: [
     "#Robotic",
     "#Exoskeleton",

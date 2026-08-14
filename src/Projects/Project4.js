@@ -41,6 +41,17 @@ export const Project4 = {
 
     thumbnail: Project4_Thumbnail,
     backgroundImage: Project4_Background,
+    projectCategories: [
+        "mechanical engineering",
+        "3D printer design",
+        "fabrication",
+        "CAD modeling",
+        "motion systems",
+        "CNC-style control",
+        "prototyping",
+        "additive manufacturing",
+        "mechatronics",
+    ],
     tags: ["#Fusion360", "#3D_CAD", "#Gcode"],
     detail_of_the_project_url: "https://drive.google.com/file/d/1xKDbGShGN_C7d_90MYdgJG7wQX6Y47YO/view?usp=sharing",
     details_BTN_text: (<div><PictureAsPdfIcon /> Details</div>),
