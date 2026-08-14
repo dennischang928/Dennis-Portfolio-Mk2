@@ -43,16 +43,6 @@ export const Project6 = {
   ),
   thumbnail: Project6_Thumbnail,
   backgroundImage: Project6_Background,
-  projectCategories: [
-    "web development",
-    "portfolio design",
-    "frontend engineering",
-    "UI development",
-    "React development",
-    "responsive design",
-    "personal branding",
-    "showcase website",
-  ],
   tags: [
     "#ReactJS",
     "#MUI",

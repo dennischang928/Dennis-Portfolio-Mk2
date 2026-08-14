@@ -41,17 +41,6 @@ export const Project3 = {
 
     thumbnail: Project3_Thumbnail,
     backgroundImage: Project3_Background,
-    projectCategories: [
-        "full-stack web development",
-        "mapping platform",
-        "interactive web application",
-        "frontend development",
-        "backend development",
-        "database design",
-        "REST API integration",
-        "mobile-first design",
-        "user-generated content",
-    ],
     tags: ["#Mobile-First", "#Node", "#ReactJS", "#Mongodb", "#Mongoose", "#API-Server", "#ExpressJS"],
     detail_of_the_project_url: "https://drive.google.com/file/d/1go-knV-2mzf3E9JWEKV9b18wUE6XKLUa/view?usp=sharing",
     details_BTN_text: (<div><PictureAsPdfIcon /> Details</div>),
